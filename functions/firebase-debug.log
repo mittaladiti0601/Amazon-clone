@@ -1,0 +1,30 @@
+[debug] [2023-04-03T18:41:06.520Z] ----------------------------------------------------------------------
+[debug] [2023-04-03T18:41:06.521Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\ADITI\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-04-03T18:41:06.521Z] CLI Version:   11.25.2
+[debug] [2023-04-03T18:41:06.521Z] Platform:      win32
+[debug] [2023-04-03T18:41:06.521Z] Node Version:  v16.13.0
+[debug] [2023-04-03T18:41:06.522Z] Time:          Tue Apr 04 2023 00:11:06 GMT+0530 (India Standard Time)
+[debug] [2023-04-03T18:41:06.522Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-04-03T18:41:06.567Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-04-03T18:41:06.568Z] > authorizing via signed-in user (mittaladiti0601@gmail.com)
+[debug] [2023-04-03T18:41:06.568Z] [iam] checking project clone-303b4 for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-04-03T18:41:06.569Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/clone-303b4:testIamPermissions [none]
+[debug] [2023-04-03T18:41:06.569Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/clone-303b4:testIamPermissions x-goog-quota-user=projects/clone-303b4
+[debug] [2023-04-03T18:41:06.569Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/clone-303b4:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-04-03T18:41:08.241Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/clone-303b4:testIamPermissions 200
+[debug] [2023-04-03T18:41:08.241Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/clone-303b4:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-04-03T18:41:08.242Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/clone-303b4/serviceAccounts/clone-303b4@appspot.gserviceaccount.com:testIamPermissions [none]
+[debug] [2023-04-03T18:41:08.242Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/clone-303b4/serviceAccounts/clone-303b4@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2023-04-03T18:41:10.191Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/clone-303b4/serviceAccounts/clone-303b4@appspot.gserviceaccount.com:testIamPermissions 200
+[debug] [2023-04-03T18:41:10.191Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/clone-303b4/serviceAccounts/clone-303b4@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2023-04-03T18:41:10.192Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-303b4 [none]
+[debug] [2023-04-03T18:41:11.102Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-303b4 200
+[debug] [2023-04-03T18:41:11.102Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-303b4 {"projectId":"clone-303b4","projectNumber":"199567335822","displayName":"amazon-clone","name":"projects/clone-303b4","resources":{"hostingSite":"clone-303b4"},"state":"ACTIVE","etag":"1_bb3ab754-217f-4a67-8789-4435b3d5437c"}
+[info] 
+[info] === Deploying to 'clone-303b4'...
+[info] 
+[info] i  deploying functions, hosting 
+[info] Running command: npm --prefix "$RESOURCE_DIR" run lint
+[info] +  functions: Finished running predeploy script. 
+[info] Running command: npm --prefix "$RESOURCE_DIR" run lint
